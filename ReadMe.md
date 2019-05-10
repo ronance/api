@@ -156,13 +156,15 @@
 
 
 ----
-* GET `/api/v1/market/chartData` 获取K线数据
+## **获取K线数据**
+
+* GET `/api/v1/market/chartData`
 
 **请求参数**
 
 | 参数名   | 类型   | 是否必须 | 描述                                                                                                                                                                                                                           |
 | -------- | ------ | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| market   | String | 是       | 交易市场<br>btc_cny,ltc_cny,eth_cny,etc_cny……                                                                                                                                                                                  |
+| market   | String | 是       | 交易市场<br>btc_cny,ltc_cny,eth_cny,etc_cny……     |                                                                                                                                                                             |
 | interval | String | 是       | 数据类型<br>1min : 1分钟<br>3min : 3分钟<br>5min : 5分钟<br>15min : 15分钟<br>30min : 30分钟<br>1day : 1日<br>3day : 3日<br>1week : 1周<br>1hour : 1小时<br>2hour : 2小时<br>4hour : 4小时<br>6hour : 6小时<br>12hour : 12小时 |
 | since    | String | 否       | 请求数据的起始时间戳                                                                                                                                                                                                           |
 
