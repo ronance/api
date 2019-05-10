@@ -57,7 +57,7 @@
 * GET [/api/v1/market/ticker](#获取行情信息) 获取行情信息
 * GET [/api/v1/order/history](#获取最新成交记录) 获取最新成交记录
 * GET [/api/v1/market/depthData](#获取深度信息) 获取深度信息
-* GET [/api/v1/market/chartData](#K线数据) 获取K线数据
+* GET [/api/v1/market/chartData](#获取K线数据) 获取K线数据
 
 私有接口：
 
@@ -156,7 +156,7 @@
 
 
 ----
-###  `/api/v1/market/chartData` 获取K线数据
+* GET `/api/v1/market/chartData` 获取K线数据
 
 **请求参数**
 
@@ -172,10 +172,7 @@
 | 参数名   | 类型   | 是否必须 | 描述                                                             |
 | -------- | ------ | -------- | ---------------------------------------------------------------- |
 | market   | String | 是       | 交易市场(交易币种_兑换币种)<br>btc_cny,ltc_cny,eth_cny,etc_cny…… |
-| cnyRate         | double    |    是    |       兑人民币汇率        | 6.8 |
-|
-| usdRate         | double    |  是      |         兑美元汇率      | 1.0 |
-|
+
 | interval | String | 是       | 数据类型                                                         |
 | since    | String | 是       | 最新一条记录的时间戳                                             |
 | datas    | Array  | 是       | [时间戳，开盘价，最高价，最低价，收盘价，成交量，成交额]                 |
