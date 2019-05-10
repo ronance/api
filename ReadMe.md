@@ -190,8 +190,6 @@
 	info: "success"
 	data : {
         market : 'btc_cny',
-        cnyRate:6.8,
-        usdRate:1.0
         interval : '15min',
         since : '1472107500000',
         datas : [
